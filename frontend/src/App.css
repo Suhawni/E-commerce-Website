@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fdfaf5;
+  color: #2c2c2c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #2c1810 0%, #4a2c1f 100%);
+}
+
+.gold-accent {
+  color: #d4af37;
+}
+
+.elegant-card {
+  background: #ffffff;
+  border: 1px solid #e8dfd0;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elegant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  background: #f9f6f0;
+}
+
+.product-image img {
+  transition: transform 0.5s ease;
+}
+
+.product-image:hover img {
+  transform: scale(1.08);
+}
+
+.luxury-button {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 12px 32px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.luxury-button:hover {
+  background: linear-gradient(135deg, #b8941f 0%, #d4af37 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+  background: rgba(253, 250, 245, 0.95);
+  border-bottom: 1px solid #e8dfd0;
+}
+
+.admin-sidebar {
+  background: linear-gradient(180deg, #2c1810 0%, #1a0f0a 100%);
+  color: #d4af37;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-processing {
+  background: #fff4e6;
+  color: #d97706;
+}
+
+.status-shipped {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.status-delivered {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-cancelled {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.category-badge {
+  background: rgba(212, 175, 55, 0.1);
+  color: #d4af37;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
