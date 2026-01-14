@@ -5,9 +5,13 @@ A full-stack E-commerce Website built using FastAPI, React, and MongoDB. The pro
 ## Project Structure
 
 Business/
+
 ├── backend/
+
 ├── frontend/
+
 └── README.md
+
 
 ## Backend Setup (FastAPI)
 
